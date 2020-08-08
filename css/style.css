@@ -1,0 +1,44 @@
+body {
+    background-color: #E7E9BB;
+}
+
+nav {
+    background-color: #403B4A;
+}
+
+.brand-logo {
+    font-family: 'Mulish', sans-serif;
+}
+
+.card{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 10px;
+}
+
+.sidenav{
+    background-color:#E7E9BB;
+}
+
+p , h2 {
+    font-family: 'Mulish', sans-serif;
+    color:#403B4A;
+}
+
+.waves-effect  {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.card-title  {
+    color: c31432;
+}
+
+.sticky {
+    font-size: 20px;
+}
+
+.striped{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+}
