@@ -1,3 +1,4 @@
+
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js');
  
 if (workbox) {
@@ -18,11 +19,8 @@ workbox.precaching.precacheAndRoute([
     {url: '/js/script.js', revision: '1'},
     {url: '/css/materialize.min.css', revision: '1'},
     {url: '/css/style.css', revision: '1'},
-    {url: '/icons/soccer.png', revision: '1'},
-    {url: '/icons/soccera.png', revision: '1'},
-    {url: '/icons/soccers.png', revision: '1'},
-    {url: '/icons/soccert.png', revision: '1'},
-    {url: '/icons/socceru.png', revision: '1'},
+    {url: '/icons/maskable_icon_192.png', revision: '1'},
+    {url: '/icons/maskable_icon_512.png', revision: '1'},
     {url: '/img/delete.webp', revision: '1'},
     {url: '/img/football.webp', revision: '1'},
     {url: '/img/menu.svg', revision: '1'},
@@ -47,7 +45,7 @@ workbox.routing.registerRoute(
 );
 
 workbox.routing.registerRoute(
-    new RegExp('https://api.football-data.org/v2/'),
+    ({url}) => url.origin === 'https://api.football-data.org',
     workbox.strategies.staleWhileRevalidate()
 )
 
