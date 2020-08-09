@@ -121,7 +121,6 @@ function getInfo() {
     })
 }
 
-
 function getHistory() {
     let dataDB = getHistoryTeams();
     dataDB.then(function (data) {
