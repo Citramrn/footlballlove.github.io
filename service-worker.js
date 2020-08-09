@@ -87,7 +87,7 @@ self.addEventListener('push', function (event) {
     }
     let options = {
         body: body,
-        icon: './icons/soccer.png',
+        icon: './icons/maskable_icon_512.png',
         vibrate: [100, 50, 100],
         data: {
             dateOfArrival: Date.now(),
