@@ -45,8 +45,16 @@ workbox.routing.registerRoute(
 );
 
 workbox.routing.registerRoute(
-    ({url}) => url.origin === 'https://api.football-data.org',
+    new RegExp('https://api.football-data.org/v2/'),
     workbox.strategies.staleWhileRevalidate()
+  );
+
+
+workbox.routing.registerRoute(
+    new RegExp('/pages/'),
+    workbox.strategies.staleWhileRevalidate({
+        cacheName: 'pages',
+    })
 )
 
 //menyimpan cache dari CSS Google Fonts
