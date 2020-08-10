@@ -1,9 +1,9 @@
 {
     "name": "Football",
     "gcm_sender_id": "51273203006",
-    "short_name": "Citra PWA",
+    "short_name": "Footballs",
     "description": "Submission two football apps",
-    "start_url": "/index.html",
+    "start_url": "./index.html",
     "display": "standalone",
     "background_color": "#403B4A",
     "theme_color": "#E7E9BB",
