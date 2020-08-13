@@ -1,7 +1,7 @@
 
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js');
  
-    let urlsToCache = [
+    let urlsToCache = ([
         {url: '/index.html', revision: '1'},
         {url: '/nav.html', revision: '1'},
         {url: '/push.js', revision: '1'},
@@ -23,7 +23,9 @@ importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
         {url: '/img/football.webp', revision: '1'},
         {url: '/img/menu.svg', revision: '1'},
         {url: '/img/save.webp', revision: '1'},
-    ]
+    ],{
+        ignoreUrlParametersMatching: [/.*/]
+    });
 
 if (workbox) {
    
