@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
     } else {
         registerServiceWorker();
         requestPermission();
-    } 
+    }
     // Register service worker
     function registerServiceWorker() {
         return navigator.serviceWorker.register('./service-worker.js')
