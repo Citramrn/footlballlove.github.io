@@ -1,7 +1,7 @@
 
 importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js');
- 
-    let urlsToCache = [
+
+        let urlsToCache = [
         {url: '/index.html', revision: '2'},
         {url: '/nav.html', revision: '2'},
         {url: '/push.js', revision: '2'},
@@ -18,7 +18,7 @@ importScripts('https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox
         {url: '/css/materialize.min.css', revision: '2'},
         {url: '/css/style.css', revision: '2'},
         {url: '/icons/maskable_icon_192.png', revision: '2'},
-        {url: '/icons/maskable_icon_512.png', revision: '2'},
+        {url: 'icons/maskable_icon_512.png', revision: '2'},
         {url: '/img/delete.webp', revision: '2'},
         {url: '/img/football.webp', revision: '2'},
         {url: '/img/menu.svg', revision: '2'},
